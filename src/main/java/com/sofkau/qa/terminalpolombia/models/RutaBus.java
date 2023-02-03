@@ -11,20 +11,20 @@ public class RutaBus {
 
     //Datos de usuario
 
-    private String Apellido;
+    private String nombreUsuario;
     private String edad;
     private int cedula;
 
 
 
 
-    public RutaBus(String id, String nombreRuta, int totalAsientosDisponibles, int precioBoleto, String horario, String apellido, String edad, int cedula) {
+    public RutaBus(String id, String nombreRuta, int totalAsientosDisponibles, int precioBoleto, String horario, String nombreUsuario, String edad, int cedula) {
         this.id = id;
         this.nombreRuta = nombreRuta;
         this.totalAsientosDisponibles = totalAsientosDisponibles;
         this.precioBoleto = precioBoleto;
         this.horario = horario;
-        this.Apellido = apellido;
+        this.nombreUsuario = nombreUsuario;
         this.edad = edad;
         this.cedula = cedula;
     }
@@ -57,8 +57,8 @@ public class RutaBus {
         return horario;
     }
 
-    public String getApellido() {
-        return Apellido;
+    public String getNombreUsuario() {
+        return nombreUsuario;
     }
 
     public String getEdad() {
@@ -76,7 +76,7 @@ public class RutaBus {
                 ",totalAsientosDisponibles=" + totalAsientosDisponibles +
                 ", precioBoleto=" + precioBoleto +
                 ", horario=" + horario +
-                ", Apellido=" + Apellido +
+                ", nombreUsuario=" + nombreUsuario +
                 ", edad=" + edad +
                 ", cedula=" + cedula +
                 '}';

@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("api/v1/compras")
+@RequestMapping("/api/terminal/boletos")
 public class BoletoBusController {
 
     @Autowired
@@ -24,7 +24,7 @@ public class BoletoBusController {
     }
 
     @PostMapping
-    public ResponseEntity registrarCompra(@RequestBody List<RutaBus> rutaBuses){
+    public ResponseEntity registrarBoleto(@RequestBody List<RutaBus> rutaBuses){
         service.registrarCompraBoleto(rutaBuses);
         return new ResponseEntity(HttpStatus.ACCEPTED);
     }

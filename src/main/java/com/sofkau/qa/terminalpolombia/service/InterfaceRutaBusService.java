@@ -8,4 +8,5 @@ public interface InterfaceRutaBusService {
 
     List<RutaBus> obtenerRutasDisponibles();
     RutaBus agregarRutaBus(RutaBus rutaBus);
+
 }

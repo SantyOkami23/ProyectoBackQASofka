@@ -25,11 +25,14 @@ public class RutaBusService implements InterfaceRutaBusService {
                 rutaBus.getTotalAsientosDisponibles(),
                 rutaBus.getPrecioBoleto(),
                 rutaBus.getHorario(),
-                rutaBus.getApellido(),
+                rutaBus.getNombreUsuario(),
                 rutaBus.getEdad(),
                 rutaBus.getCedula());
 
         terminalPolombia.agregarRuta(rutaBusInventario);
         return rutaBusInventario;
     }
+
+
+
 }

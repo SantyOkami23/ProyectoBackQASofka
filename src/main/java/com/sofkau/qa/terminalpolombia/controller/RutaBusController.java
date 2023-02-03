@@ -7,13 +7,13 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("api/v1/rest")
+@RequestMapping("api/terminal/rest")
 public class RutaBusController {
 
     @Autowired
     private InterfaceRutaBusService RutaBusService;
 
-    @GetMapping("/mostrar/all")
+    @GetMapping("/mostrar/todo")
     public ResponseEntity GETtraerRutaBus(){
 
         return new ResponseEntity(RutaBusService.obtenerRutasDisponibles() ,HttpStatus.FOUND);
@@ -24,4 +24,5 @@ public class RutaBusController {
         return new ResponseEntity(RutaBusService.agregarRutaBus(rutaBus), HttpStatus.CREATED);
     }
 //Prueba
+
 }

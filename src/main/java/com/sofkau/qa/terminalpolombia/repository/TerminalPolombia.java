@@ -22,7 +22,10 @@ public class TerminalPolombia {
 
     public TerminalPolombia() {
         this.nombre = "Terminal Polombia";
-        rutaBuses = new ArrayList<>(List.of(new RutaBus("1", "La Sabrosa", 100, 3000, " 5 de la tarde", "", "", 0)
+        rutaBuses = new ArrayList<>(List.of(new RutaBus("1", "RUTA 17 A", 10, 3000, " 5 de la tarde", "", "", 0),
+                new RutaBus("2", "RUTA 18 ", 10, 3000, " 4 de la tarde", "", "", 0)
+
+
 
                 //Aqui agrego mas rutas
               ));
@@ -58,6 +61,7 @@ public class TerminalPolombia {
         rutaBuses.add(rutaBus);
     }
 
+
     public List<RutaBus> getRutaBus() {
         return rutaBuses;
     }
@@ -65,5 +69,7 @@ public class TerminalPolombia {
     public void setRutaBus(List<RutaBus> rutaBuses) {
         this.rutaBuses = rutaBuses;
     }
+
+
 }
 
